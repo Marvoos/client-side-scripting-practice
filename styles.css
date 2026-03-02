@@ -1,0 +1,117 @@
+
+/*Reset the documents elements to no margin, no padding, and a box-sizing of border-box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /*Assign the width and height to the width and height of the current viewport*/
+    height: 100vh;
+    width: 100vw;
+    /*Display flex to centre the div on both pages*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*Set the default font to Arial on both pages*/
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+form {
+    /*Format the centre form so that it takes up 30% of the viewport width*/
+    width: 30vw;
+    /*Assign the background colour*/
+    background-color: #1E1E1E;
+    /*Assign the default colour of text to an off white*/
+    color: aliceblue;
+    /*Pad the inputs and labels for more whitespace*/
+    padding: 1rem;
+    /*Assign a radius of 0.5 relative units*/
+    border-radius: 0.5rem;
+    /*Assign a grey border*/
+    border: #333 solid 0.25rem;
+    /*Assign a shadow to the form*/
+    box-shadow: 5px 5px 5px#33333355;
+}
+
+/*Select the divs directly inside of the form*/
+form > div {
+    /*Space the top of the label and the bottom of the text input*/
+    margin-bottom: 1rem;
+    /*Ensure the div spans the width of the form*/
+    width: 100%;
+}
+
+/*Select the text input directly inside of the div and form*/
+form > div > input[type="text"] {
+    /*Assign a height of 50% higher than the font size*/
+    height: 1.5rem;
+    /*Assign the background colour to a grey*/
+    background-color: #333;
+    /*Use a small white border*/
+    border: 1px solid aliceblue;
+    /*Remove the outline*/
+    outline: none;
+    /*Assign a white colour for the text*/
+    color: aliceblue;
+    /*Pad around the text*/
+    padding: 1rem;
+    /*Ensure the text input spans the div*/
+    width: 100%;
+    /*Assign a little white space between the labels and corresponding inputs*/
+    margin-top: 0.5rem;
+}
+
+/*Select the submit button*/
+form input[type="submit"] {
+    /*Text colour of white*/
+    color: aliceblue;
+    /*No background*/
+    background: none;
+    /*Assign a small, white outline border w*/
+    border: solid 2px aliceblue;
+    /*Assign a border radius to this button*/
+    border-radius: 0.5rem;
+    /*Ensure the user's cursor turns into a pointer when they hover over it*/
+    cursor: pointer;
+    /*Apply an ease-in-out transition*/
+    transition: all 0.2s ease-in-out;
+    /*Ensure the width spans the form width*/
+    width: 100%;
+    /*Apply a padding of 0.25 relative units in the vertical direction*/
+    padding: 0.25rem 0;
+}
+
+
+/*Apply a hover effect to the submit button*/
+form input[type="submit"]:hover {
+    /*Assign a text colour similar to that of the form*/
+    color: #1E1E1E;
+    /*reapply a background colour of white*/
+    background-color: aliceblue;
+}
+
+/*Apply focus effects to the text input inside of the form*/
+form > div > input[type="text"]:focus {
+    color: #1E1E1E;
+    background-color: aliceblue;
+}
+
+/*Assign the following rules to the success message in the second page.*/
+.form-success-msg {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: #1E1E1E;
+    color: aliceblue; 
+    border: solid 5px #333;   
+    width: 60vw;
+    height: fit-content;
+}
+
+/*Apply a different colour to each of the dynamically updated variables to allow for easier grading*/
+.form-success-msg > span {
+    font-weight: bold;
+    color: aqua;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External CSS is the same for each page-->
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Client Form</title>
+</head>
+<body>
+    <!--Main form for last name and first name-->
+    <!--Redirects to the clientpage2.html using the get method which puts input in URL-->
+    <form action="clientpage2.html" method="get">
+        <!--Both inputs are required so that all three textboxes will have a value-->
+        <!--First name textbox-->
+        <div>
+            <label for="first-name">First Name:</label>
+            <br>
+            <input type="text" name="first-name" id="first-name" required>
+        </div>
+        <!--Last name textbox-->
+        <div>
+            <label for="last-name">Last Name:</label>
+            <br>
+            <input type="text" name="last-name" id="last-name" required>
+        </div>
+        <!--A text box which will contain the users full name and has the readonly attribute-->
+        <!--to prevent the user from editing directly-->
+        <div>
+            <label for="full-name">Full Name:</label>
+            <br>
+            <input type="text" name="full-name" id="full-name" readonly>
+        </div>
+        <!--Submit button to allow for users to click-->
+        <input type="submit" id="input-submit-btn">
+    </form>
+    <!--External javascript file which differs from the clientpage2.js file.-->
+    <!--Used mostly to retreive information on this page-->
+    <script src="clientpage1.js"></script>
+</body>
+</html>

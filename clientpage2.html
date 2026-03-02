@@ -3,10 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--External CSS is the same for each page-->
     <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <title>Client Form Success</title>
 </head>
 <body>
-    <script src="main.js"></script>
+
+    <div>
+        <!--Division heading-->
+        <h1>Form Success!</h1>
+        <!--A paragraph containing several inline elements to help display each dynamic value.-->
+        <!--The first span will contain the greeting, second span, the full name, third span the referred document, and the fourth span, the time it took to complete the form-->
+        <p class="form-success-msg"><span id="time-day-msg"></span> <span id="full-name-msg"></span>, you were referred to us from "<span id="referral-name-msg"></span>". The total time you spent on the form, from load time to submit is "<span id="elapsed-time-msg"></span>" (rounded to the nearest minute)</p>
+    </div>
+    <!--Include the clientpage2.js file to enable dynamic updating-->
+    <script src="clientpage2.js"></script>
 </body>
 </html>
